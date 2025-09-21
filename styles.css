@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
 }
 
 form {
@@ -47,5 +48,29 @@ button:hover {
   color: black;
   transition-duration: 500ms;
   cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+  }
 }
 
