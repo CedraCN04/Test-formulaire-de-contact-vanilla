@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Formulaire de contact</h1>
-    <form method="POST" id="contact-form">
+    <form method="POST" id="contact-form" novalidate>
       <label for="mail">Entrez votre adresse mail :</label>
       <input
         type="email"
@@ -16,6 +16,7 @@
         id="input-mail"
         placeholder="Entrez votre adresse mail"
       />
+      <span class="error-mail" id="error-mail"></span>
       <label for="password">Choisissez un mot de passe :</label>
       <input
         type="password"
@@ -23,6 +24,7 @@
         id="input-password"
         placeholder="Entrez votre mot de passe"
       />
+      <span class="error-password" id="error-password"></span>
       <button type="submit" id="submit-button">Valider</button>
     </form>
     <script src="main.js"></script>
